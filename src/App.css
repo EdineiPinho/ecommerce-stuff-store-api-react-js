@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*::-webkit-scrollbar {
+  width: .85rem;
+}
+
+*::-webkit-scrollbar-track {
+  background: rgba(111, 194, 94, .2);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(111, 194, 94, .4);
+  border-radius: 5px;
+  border: 1px solid rgba(111, 194, 94, .2);
+}
+
+body {
+  margin: 2rem;
+}
+
+img {
+  max-width: 100%;
+  border-radius: .4rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h1 {
+  font-size: 2.4rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: sans-serif;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  max-width: 50rem;
+  margin: 0 auto;
+  min-height: calc(100vh + 1px);
+}
+
+.content {
+  flex: 1;
+}
+
+.animeLeft {
+  transform: translateX(-20px);
+  opacity: 0;
+  animation: animeLeft .5s forwards;
+}
+
+@keyframes animeLeft {
+  to {
+    transform: initial;
+    opacity: initial;
+  }
+}
+
+.animeRight {
+  transform: translateX(40px);
+  opacity: 0;
+  animation: animeRight .5s forwards;
+}
+
+@keyframes animeRight {
+  to {
+    transform: initial;
+    opacity: initial;
+  }
+}
+
+.animeDown {
+  transform: translateY(-20px);
+  opacity: 0;
+  animation: animeDown .5s forwards;
+}
+
+@keyframes animeDown {
+  to {
+    transform: initial;
+    opacity: initial;
+  }
+}
+
+.animeUp {
+  transform: translateY(20px);
+  opacity: 0;
+  animation: animeUp .5s forwards;
+}
+
+@keyframes animeUp {
+  to {
+    transform: initial;
+    opacity: initial;
+  }
+}
+
+.loading {
+  position: absolute;
+  top: calc(50vh - 5rem);
+  right: calc(50vw - 5rem);
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  border: 2.5rem solid rgba(200, 200, 200, .3);
+  border-right-color: transparent;
+  animation: loading 1s infinite;
+}
+
+@keyframes loading {
+  to {
+    transform: rotate(360deg);
+  }
+}

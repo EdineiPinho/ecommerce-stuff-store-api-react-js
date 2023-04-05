@@ -1,0 +1,17 @@
+h1 {
+  font-family: Arial, Helvetica, sans-serif !important;
+}
+
+.produtos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.produtos h2 {
+  color: #333;
+}
+
+.nome {
+  margin: .5rem 0;
+}
