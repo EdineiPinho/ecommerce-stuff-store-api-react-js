@@ -1,6 +1,7 @@
 {
   "name": "app-shop-api",
   "version": "0.1.0",
+  "homepage": "https://github.com/EdineiPinho/miniSHOPwithAPIusingREACT",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
